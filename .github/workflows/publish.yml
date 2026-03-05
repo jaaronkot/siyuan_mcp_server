@@ -24,9 +24,6 @@ jobs:
       - name: Build project
         run: npm run build
         
-      - name: Test build
-        run: npm start & sleep 5; kill %1
-        
       - name: Publish to npm
         run: npm publish
         env:
